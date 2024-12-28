@@ -23,8 +23,8 @@ model User {
   email                    String               @unique
   name                     String?
   password                 String
-  created_at               DateTime            @default(now())
-  updated_at               DateTime            @updatedAt
+  created_at               DateTime             @default(now())
+  updated_at               DateTime             @updatedAt
 }
 
 model UnverifiedUser {
@@ -32,6 +32,6 @@ model UnverifiedUser {
   email                    String               @unique
   name                     String?
   password                 String
-  created_at               DateTime            @default(now())
-  updated_at               DateTime            @updatedAt
+  created_at               DateTime             @default(now())
+  updated_at               DateTime             @updatedAt
 }
