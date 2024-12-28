@@ -2,6 +2,7 @@ import express, { urlencoded } from 'express';
 import cors from 'cors';
 import env from 'dotenv';
 import books_routes from './features/books/routes';
+import user_routes from './features/users/routes/user_routes';
 
 env.config();
 
@@ -18,6 +19,7 @@ app.use(express.urlencoded({
 
 
 app.use(books_routes)
+app.use(user_routes)
 
 app.listen(PORT, () => {
     console.info(`
