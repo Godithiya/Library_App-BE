@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { create_book } from './create';
-import { all_book } from './list';
-import { delete_book } from './delete';
-import { update_book } from './update';
+import { create_book } from './controller/create';
+import { all_book } from './controller/list';
+import { delete_book } from './controller/delete';
+import { update_book } from './controller/update';
 
 
 const books_routes = new Router();

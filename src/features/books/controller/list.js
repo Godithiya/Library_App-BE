@@ -1,4 +1,4 @@
-import db from '../../../prisma/conn';
+import db from '../../../../prisma/conn';
 import { request, response } from 'express';
 
 async function all_book(req = request, res = response) {
